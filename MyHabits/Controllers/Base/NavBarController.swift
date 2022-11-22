@@ -22,11 +22,10 @@ final class NavBarController: UINavigationController {
         navigationBar.isTranslucent = false
         navigationBar.standardAppearance.titleTextAttributes = [
             .foregroundColor: Resources.Colors.navBarText,
-            .font: Resources.Fonts.sfProDisplay(with: 17)
+            .font: Resources.Fonts.sfProDisplaySemibold(with: 17)
             
         ]
         navigationBar.addBottomBorder(with: Resources.Colors.separator, height: 1)
     }
-    
-    
 }
+

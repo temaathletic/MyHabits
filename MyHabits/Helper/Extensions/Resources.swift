@@ -35,8 +35,31 @@ enum Resources {
     }
     
     enum Fonts {
-        static func sfProDisplay(with size: CGFloat) -> UIFont {
-            UIFont(name: "SF Pro Display", size: size) ?? UIFont()
+        static func avenirNextBold(with size: CGFloat) -> UIFont {
+            UIFont(name: "Avenir Next Bold", size: size) ?? UIFont()
+        }
+        static func sfProDisplayBold(with size: CGFloat) -> UIFont {
+            UIFont(name: "SFProDisplay-Bold", size: size) ?? UIFont()
+        }
+        
+        static func sfProDisplayRegular(with size: CGFloat) -> UIFont {
+            UIFont(name: "SFProDisplay-Regular", size: size) ?? UIFont()
+        }
+        
+        static func sfProDisplaySemibold(with size: CGFloat) -> UIFont {
+            UIFont(name: "SFProDisplay-Semibold", size: size) ?? UIFont()
         }
     }
 }
+
+//MARK: - Fonts Name SF Pro Display
+
+//"SFProDisplay-Regular",
+//"SFProDisplay-UltralightItalic",
+//"SFProDisplay-ThinItalic",
+//"SFProDisplay-LightItalic",
+//"SFProDisplay-SemiboldItalic",
+//"SFProDisplay-Bold",
+//"SFProDisplay-HeavyItalic",
+//"SFProDisplay-BlackItalic"
+//"SFProDisplay-Semibold"

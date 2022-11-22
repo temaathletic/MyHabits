@@ -26,14 +26,14 @@ final class TabBarController: UITabBarController {
     
     private func setupView() {
         tabBar.tintColor = Resources.Colors.active
-        tabBar.barTintColor = Resources.Colors.inActive
+        tabBar.barTintColor = Resources.Colors.tabBarBackground
         tabBar.backgroundColor = Resources.Colors.tabBarBackground
         
         tabBar.layer.borderColor = Resources.Colors.separator.cgColor
         tabBar.layer.borderWidth = 1
         tabBar.layer.masksToBounds = true
         
-        let habitViewController = HabitViewController()
+        let habitViewController = HabitController()
         let infoViewController = InfoViewController()
         
         let habitNavigationController = NavBarController(rootViewController: habitViewController)

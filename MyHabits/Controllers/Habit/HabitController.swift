@@ -1,5 +1,5 @@
 //
-//  HabitViewController.swift
+//  HabitController.swift
 //  MyHabits
 //
 //  Created by temaathletic on 19.11.2022.
@@ -7,9 +7,7 @@
 
 import UIKit
 
-let notificationKeyForCellUpdate = "updateProgressBar"
-
-class HabitViewController: BaseController {
+class HabitController: BaseController {
     
     private let navBar = HabitNavController()
     
@@ -21,9 +19,10 @@ class HabitViewController: BaseController {
         layoutView()
         
     }
+    
 }
 
-extension HabitViewController {
+extension HabitController {
     
     override func setupView() {
         super.setupView()
@@ -52,4 +51,7 @@ extension HabitViewController {
         view.addSubview(navBar)
     }
 }
+
+addBottomBorder(with: <#T##UIColor#>, height: <#T##CGFloat#>)
+
 
