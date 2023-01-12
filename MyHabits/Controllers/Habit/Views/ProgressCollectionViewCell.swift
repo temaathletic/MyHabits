@@ -10,7 +10,7 @@ import SnapKit
 
 class ProgressCollectionViewCell: UICollectionViewCell {
     
-    private lazy var textLabel: UILabel = {
+    private let textLabel: UILabel = {
         let label = UILabel()
         label.text = "Все получится!"
         label.font = Resources.Fonts.sfProDisplayBold(with: 13)
@@ -18,7 +18,7 @@ class ProgressCollectionViewCell: UICollectionViewCell {
         return label
     }()
     
-    private lazy var progressLabel: UILabel = {
+    private let progressLabel: UILabel = {
         let label = UILabel()
         label.text = "0%"
         label.font = Resources.Fonts.sfProDisplayBold(with: 13)
@@ -26,7 +26,7 @@ class ProgressCollectionViewCell: UICollectionViewCell {
         return label
     }()
     
-    private lazy var progressBar: UIProgressView = {
+    private var progressBar: UIProgressView = {
         let progress = UIProgressView()
         progress.trackTintColor = .systemGray
         progress.progressTintColor = UIColor.purple

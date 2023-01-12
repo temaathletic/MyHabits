@@ -6,24 +6,23 @@
 //
 
 import UIKit
+import SnapKit
 
 class TableActivitiesDetailsCell: UITableViewCell {
     
-    private lazy var textForCell: UILabel = {
+    private let textForCell: UILabel = {
         let title = UILabel()
         title.font = .systemFont(ofSize: 14)
         title.textAlignment = .left
         title.textColor = .black
         title.text = ""
-        title.translatesAutoresizingMaskIntoConstraints = false
         return title
     }()
     
-    private lazy var imageCheck: UIImageView = {
+    private let imageCheck: UIImageView = {
         let image = UIImageView()
         image.tintColor = UIColor.purple
         image.image = UIImage(systemName: "checkmark")
-        image.translatesAutoresizingMaskIntoConstraints = false
         return image
     }()
     
@@ -40,15 +39,16 @@ class TableActivitiesDetailsCell: UITableViewCell {
         contentView.addSubview(textForCell)
         contentView.addSubview(imageCheck)
         
-        NSLayoutConstraint.activate([
-            
-            textForCell.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 11),
-            textForCell.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 16),
-            textForCell.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -11),
-            
-            imageCheck.centerYAnchor.constraint(equalTo: textForCell.centerYAnchor),
-            imageCheck.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -14)
-        ])
+        textForCell.snp.makeConstraints { make in
+            make.top.equalTo(contentView).inset(11)
+            make.left.equalTo(contentView).inset(16)
+            make.bottom.equalTo(contentView).inset(11)
+        }
+        
+        imageCheck.snp.makeConstraints { make in
+            make.centerY.equalTo(textForCell)
+            make.right.equalTo(contentView).inset(14)
+        }
     }
     
     func setupTextForCell(_ habit: Habit, _ data: Date){
