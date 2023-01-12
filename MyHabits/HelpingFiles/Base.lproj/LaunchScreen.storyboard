@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
-    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <device id="retina6_72" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -17,38 +17,38 @@
             <objects>
                 <viewController id="01J-lp-oVM" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="AUc-yf-tCR">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView autoresizesSubviews="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="main_icon" translatesAutoresizingMaskIntoConstraints="NO" id="ZDv-SY-8cy">
-                                <rect key="frame" x="135" y="362" width="120" height="120"/>
-                                <accessibility key="accessibilityConfiguration">
-                                    <accessibilityTraits key="traits" image="YES" notEnabled="YES"/>
-                                </accessibility>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MyHabits" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q3O-oE-D4q">
-                                <rect key="frame" x="151" y="764" width="88" height="24"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="749" text="MyHabits" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q3O-oE-D4q">
+                                <rect key="frame" x="168" y="846" width="90" height="20"/>
                                 <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="20"/>
                                 <color key="textColor" red="0.63137254901960782" green="0.086274509803921567" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView autoresizesSubviews="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="main_icon" translatesAutoresizingMaskIntoConstraints="NO" id="ZDv-SY-8cy">
+                                <rect key="frame" x="155" y="406" width="120" height="120"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" image="YES" notEnabled="YES"/>
+                                </accessibility>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="BBB-0V-fVT"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="BBB-0V-fVT" firstAttribute="bottom" secondItem="ZDv-SY-8cy" secondAttribute="bottom" constant="328" id="OwM-BO-Mdy"/>
-                            <constraint firstItem="BBB-0V-fVT" firstAttribute="trailing" secondItem="ZDv-SY-8cy" secondAttribute="trailing" constant="135" id="Qbf-gi-OXz"/>
-                            <constraint firstItem="ZDv-SY-8cy" firstAttribute="top" secondItem="BBB-0V-fVT" secondAttribute="top" constant="315" id="QjF-sa-akd"/>
-                            <constraint firstItem="BBB-0V-fVT" firstAttribute="bottom" secondItem="Q3O-oE-D4q" secondAttribute="bottom" constant="22" id="QvV-yi-OS2"/>
-                            <constraint firstItem="Q3O-oE-D4q" firstAttribute="leading" secondItem="BBB-0V-fVT" secondAttribute="leading" constant="151" id="lEH-2I-14H"/>
-                            <constraint firstItem="BBB-0V-fVT" firstAttribute="trailing" secondItem="Q3O-oE-D4q" secondAttribute="trailing" constant="151" id="mQb-PP-EzH"/>
-                            <constraint firstItem="ZDv-SY-8cy" firstAttribute="leading" secondItem="BBB-0V-fVT" secondAttribute="leading" constant="135" id="xVo-mk-9WI"/>
+                            <constraint firstItem="BBB-0V-fVT" firstAttribute="trailing" secondItem="ZDv-SY-8cy" secondAttribute="trailing" constant="155" id="3Py-5N-v1f"/>
+                            <constraint firstItem="Q3O-oE-D4q" firstAttribute="top" secondItem="ZDv-SY-8cy" secondAttribute="bottom" constant="320" id="JJU-jh-AVu"/>
+                            <constraint firstItem="Q3O-oE-D4q" firstAttribute="leading" secondItem="BBB-0V-fVT" secondAttribute="leading" constant="168" id="SK8-QH-2nE"/>
+                            <constraint firstItem="BBB-0V-fVT" firstAttribute="bottom" secondItem="Q3O-oE-D4q" secondAttribute="bottom" constant="32" id="T27-cn-1G4"/>
+                            <constraint firstItem="ZDv-SY-8cy" firstAttribute="leading" secondItem="BBB-0V-fVT" secondAttribute="leading" constant="155" id="dvz-RJ-RYt"/>
+                            <constraint firstItem="BBB-0V-fVT" firstAttribute="trailing" secondItem="Q3O-oE-D4q" secondAttribute="trailing" constant="172" id="oH5-vn-dAX"/>
+                            <constraint firstItem="ZDv-SY-8cy" firstAttribute="top" secondItem="BBB-0V-fVT" secondAttribute="top" constant="347" id="tXl-vl-tRN"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
         </scene>
     </scenes>
     <resources>
